@@ -1,0 +1,24 @@
+// Swiperコンポーネント
+
+.swiper-slide {
+    width: 100%;
+    aspect-ratio: 390/211;
+    @include pc {
+        aspect-ratio: 1440/835;
+    }
+
+    img {
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+// Swiperテーマカラー（アクティブ色）を当サイトのアクセントに統一
+:root {
+    --swiper-theme-color: #215849 !important;
+}
+
+// 念のため直接上書き（CDN読み込み順の影響を受けないように）
+.swiper .swiper-pagination-bullet-active {
+    background-color: #215849 !important;
+}
