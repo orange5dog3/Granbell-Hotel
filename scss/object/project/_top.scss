@@ -1,0 +1,52 @@
+// FV
+.top__fv {
+    margin-top: 3.2rem;
+    padding-bottom: 6.2rem;
+    width: 100%;
+    @include pc {
+        margin-top: 3.2rem;
+        padding-bottom: 12rem;
+    }
+    
+    // 背景画像設定
+    background-image: url(../image/top/bg_top_fv_sp.png);
+    background-size: 100% auto; // 幅100%で高さを自動（比率通り）
+    background-repeat: no-repeat;
+    
+    @include pc {
+        background-image: url(../image/top/bg_top_fv_pc.png);
+    }
+
+
+    h2 {
+        margin-top: 63.6rem;
+        @include pc {
+            margin-top: 68.5rem;
+        }
+    }
+
+    p {
+        margin-top: 2.4rem;
+        line-height: 2;
+        letter-spacing: 0.1em;
+    }
+}
+
+.top__fv-title {
+    width: 26rem;
+    margin: 0 auto;
+
+    @include pc {
+        width: 65rem;
+    }
+}
+
+// about
+.top__about {
+    // 背景画像設定
+    background-image: url(../image/top/bg_top_about_sp.png);
+    background-size: 100% auto; // 幅100%で高さを自動（比率通り）
+    background-repeat: no-repeat;
+    
+    
+}

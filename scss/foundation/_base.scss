@@ -3,35 +3,52 @@
 html {
     //375px~767px
     font-size: 62.5%;
-    //768~1399px
-    @media(min-width: 768px) and (max-width: 1399px){
-      font-size: calc(10 / 1400 * 100vw);
+
+    //768~1260px
+    @media(min-width: 768px) and (max-width: 1260px) {
+        font-size: calc(10 / 1260 * 100vw);
     }
-    //1400px~
-    @media (min-width: 1400px) {
-      font-size: 10px;
+
+    //1260px~
+    @media (min-width: 1260px) {
+        font-size: 10px;
     }
-    @media(max-width:390px) {
-      font-size: calc(10 /390 * 100vw);
+
+    @media(max-width:375px) {
+        font-size: calc(10 /375 * 100vw);
     }
 
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-weight: 400;
     color: $color-text;
+    background-color: $color-bg;
     font-family: $font-family-base;
+    font-size: 1.6rem;
+    @include pc {
+        font-size: 2rem;
+    }
 }
 
-h1,h2,h3,h4,label,input,a,ul,li {
+h1,
+h2,
+h3,
+h4,
+label,
+input,
+a,
+ul,
+li {
     display: block;
 }
 
-.header-padding{
-    padding-top: 5rem;
+.header-padding {
+    padding-top: 5.6rem;
+
     @include pc {
-        padding-top: 8rem;
+        padding-top: 9.2rem;
     }
 }
 
@@ -41,43 +58,39 @@ img {
     object-fit: cover;
 }
 
-p {
-    font-size: 1.2rem;
-    @include pc {
-        font-size: 3rem;
-    }
-}
 
 .inner {
-    padding-inline: 1rem;
+    padding-inline: 3rem;
     margin: 0 auto;
+
     @include pc {
         padding-inline: 3rem;
-        max-width: 140rem;
-
+        max-width: 126rem;
     }
 }
 
-a{
+a {
     @include transition;
 }
 
-@include pc{
-    .pc_none{
-        display: none;
+@include pc {
+    .pc_none {
+        display: none !important;
     }
-    .sp_none{
+
+    .sp_none {
         display: block;
     }
 }
 
 
-@include sp{
-    .sp_none{
-        display: none;
+@include sp {
+    .sp_none {
+        display: none !important;          
     }
-    .pc_none{
-        display: block;
+
+    .pc_none {
+        display: block;  
     }
 }
 
@@ -87,7 +100,7 @@ a{
 
 @function vw($pixelsVw, $baseWidth) {
     @return calc($pixelsVw / $baseWidth * 100vw);
-  }
+}
 
 // 基本的なaタグの設定------------------------------------
 a {
@@ -95,30 +108,30 @@ a {
     @include transition;
 }
 
-// フォントサイズ
-.fs-very-small {
-    @include pc {
-        font-size: 1.2rem !important;
-    }
-}
-.fs-small {
-    @include pc {
-        font-size: 2rem !important;
-    }
-}
-
-.fs-large {
-    font-size: 1.5rem !important;
-    @include pc {
-        font-size: 4.5rem !important;
-    }
-}
-
-
 
 //サイズ用関数------------------------------------
 //$pixelsVw:サイズ
 //$baseWidth:ベースとなる画面横幅
 @function vw($pixelsVw, $baseWidth) {
     @return calc($pixelsVw / $baseWidth * 100vw);
+}
+
+// セクションタイトル------------------------------------
+.section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+
+    @include pc {
+        font-size: 4rem;
+    }
+
+    span {
+        font-size: 1.6rem;
+
+        @include pc {
+            font-size: 2rem;
+        }
+    }
+    
 }
