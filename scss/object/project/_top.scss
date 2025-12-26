@@ -1,0 +1,23 @@
+// FV
+.top__fv {
+    margin-top: 3.2rem;
+    width: 100%;
+    
+    // 背景画像設定
+    background-image: url(../image/top/bg_top_fv_sp.png);
+    background-size: 100% auto; // 幅100%で高さを自動（比率通り）
+    background-repeat: no-repeat;
+    
+    // 画像の比率を維持（750px : 2730px）
+    aspect-ratio: 750 / 2730;
+    
+    // 中身のレイアウト用（必要なら）
+    position: relative;
+    
+}
+
+.top__fv-title {
+    width: 26rem;
+    padding-top: 10rem; // 適当な位置調整（absoluteではなくpaddingやmarginで配置可能）
+    margin: 0 auto;
+}

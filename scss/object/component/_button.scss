@@ -1,0 +1,35 @@
+.btn-entry {
+  width: 11rem;
+  height: 3.6rem;
+  @include pc {
+    width: 14.2rem;
+    height: 4.4rem;
+  }
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 40px;
+  border: 2px solid #fff;
+  
+  background: linear-gradient(90deg,#FF5A37 0%, #FFDF75 100%);
+  
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  
+  transition: opacity 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// エントリーボタン
+.btn-header {
+    width: 11rem;
+    height: 3.6rem;
+}

@@ -24,6 +24,7 @@ html {
 body {
     font-weight: 400;
     color: $color-text;
+    background-color: $color-bg;
     font-family: $font-family-base;
 }
 
@@ -77,7 +78,7 @@ a {
 
 @include pc {
     .pc_none {
-        display: none;
+        display: none !important;
     }
 
     .sp_none {
@@ -88,11 +89,11 @@ a {
 
 @include sp {
     .sp_none {
-        display: none;
+        display: none !important;          
     }
 
     .pc_none {
-        display: block;
+        display: block;  
     }
 }
 
