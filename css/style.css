@@ -399,9 +399,15 @@ html {
 
 body {
   font-weight: 400;
-  color: #000000;
+  color: #454241;
   background-color: rgba(250, 246, 241, 0.5);
   font-family: "YuGothic", "Yu Gothic", "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 2rem;
+  }
 }
 
 h1,
@@ -430,15 +436,6 @@ img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-p {
-  font-size: 1.2rem;
-}
-@media screen and (min-width: 768px) {
-  p {
-    font-size: 3rem;
-  }
 }
 
 .inner {
@@ -479,24 +476,22 @@ a {
   transition: 0.3s ease;
 }
 
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
 @media screen and (min-width: 768px) {
-  .fs-very-small {
-    font-size: 1.2rem !important;
+  .section-title {
+    font-size: 4rem;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .fs-small {
-    font-size: 2rem !important;
-  }
-}
-
-.fs-large {
-  font-size: 1.5rem !important;
+.section-title span {
+  font-size: 1.6rem;
 }
 @media screen and (min-width: 768px) {
-  .fs-large {
-    font-size: 4.5rem !important;
+  .section-title span {
+    font-size: 2rem;
   }
 }
 
@@ -958,16 +953,49 @@ footer a {
 
 .top__fv {
   margin-top: 3.2rem;
+  padding-bottom: 6.2rem;
   width: 100%;
   background-image: url(../image/top/bg_top_fv_sp.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  aspect-ratio: 750/2730;
-  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .top__fv {
+    margin-top: 3.2rem;
+    padding-bottom: 12rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top__fv {
+    background-image: url(../image/top/bg_top_fv_pc.png);
+  }
+}
+.top__fv h2 {
+  margin-top: 63.6rem;
+}
+@media screen and (min-width: 768px) {
+  .top__fv h2 {
+    margin-top: 68.5rem;
+  }
+}
+.top__fv p {
+  margin-top: 2.4rem;
+  line-height: 2;
+  letter-spacing: 0.1em;
 }
 
 .top__fv-title {
   width: 26rem;
-  padding-top: 10rem;
   margin: 0 auto;
-}/*# sourceMappingURL=style.css.map */
+}
+@media screen and (min-width: 768px) {
+  .top__fv-title {
+    width: 65rem;
+  }
+}
+
+.top__about {
+  background-image: url(../image/top/bg_top_about_sp.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
