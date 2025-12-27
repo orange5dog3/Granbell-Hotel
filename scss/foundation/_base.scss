@@ -24,12 +24,10 @@ html {
 body {
     font-weight: 400;
     color: $color-text;
-    background-color: $color-bg;
+    background-color: $color-base-white;
     font-family: $font-family-base;
     font-size: 1.6rem;
-    @include pc {
-        font-size: 2rem;
-    }
+
 }
 
 h1,
@@ -137,6 +135,18 @@ a {
 }
 
 // 色------------------------------------
+.color-base-white {
+    color: $color-base-white;
+}
+
+.color-base-white-bg {
+    background-color: $color-base-white;
+}
+
 .color-white {
     color: $color-white;
+}
+
+.color-white-bg {
+    background-color: $color-white;
 }

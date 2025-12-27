@@ -8,7 +8,7 @@
         padding-top: 15.4rem;
         padding-bottom: 12.5rem;
     }
-    
+
 
 
 
@@ -47,6 +47,7 @@
     right: 0;
     width: 16rem;
     z-index: -1;
+
     @include pc {
         top: -36rem;
         width: 39rem;
@@ -63,13 +64,15 @@
         line-height: calc(20rem / 12rem);
         letter-spacing: 0.4em;
         font-size: 2rem;
+        font-weight: 700;
+
         @include pc {
             font-size: 4rem;
             // line-height: calc(40rem / 32rem);
 
         }
     }
-    
+
 }
 
 // vision
@@ -77,6 +80,7 @@
     margin-top: -6rem;
     padding-bottom: 6rem;
     position: relative;
+
     @include pc {
         margin-top: -32rem;
         padding-bottom: 12rem;
@@ -87,6 +91,11 @@
         margin-top: 2.4rem;
         line-height: 2;
         letter-spacing: 0.1em;
+        font-weight: 700;
+
+        @include pc {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -96,6 +105,7 @@
     left: 0;
     width: 15.7rem;
     z-index: -1;
+
     @include pc {
         top: -26rem;
         left: 20rem;
@@ -109,6 +119,7 @@
     left: 0;
     width: 13.8rem;
     z-index: -1;
+
     @include pc {
         width: 29.4rem;
     }
@@ -122,6 +133,57 @@
     background-size: 100% auto; // 幅100%で高さを自動（比率通り）
     background-repeat: no-repeat;
 
-    padding-top: 6rem;
+    padding-top: 6.5rem;
     padding-bottom: 6rem;
+
+    @include pc {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+
+    // 背景画像 + オーバーレイ
+    background-image: linear-gradient(rgba(69, 66, 65, 0.5), rgba(69, 66, 65, 0.5)),url(../image/top/bg_top_about_sp.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.top__about-box {
+    padding: 3.2rem 1.95rem 6.5rem;
+
+    @include pc {
+        padding: 3.2rem 0 3.2rem 4rem;
+    }
+}
+
+.top__about__flex-parent {
+    margin-top: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    @include pc {
+        margin-top: 4rem;
+        gap: 4rem;
+
+    }
+}
+
+.top__about__flex-child {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+
+    @include pc {
+        flex-direction: row;
+        justify-content: space-between;
+
+        gap: 4rem;
+        
+        // 直下のdiv (c-boxなど) を均等に伸ばす
+        > div {
+            flex: 1;
+        }
+    }
 }
