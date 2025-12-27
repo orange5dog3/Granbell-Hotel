@@ -1,21 +1,15 @@
 // FV
 .top__fv {
-    margin-top: 3.2rem;
-    padding-bottom: 6.2rem;
-    width: 100%;
+    padding-top: 7.6rem;
+    padding-bottom: 6rem;
+    position: relative;
+
     @include pc {
-        margin-top: 3.2rem;
-        padding-bottom: 12rem;
+        padding-top: 15.4rem;
+        padding-bottom: 12.5rem;
     }
     
-    // 背景画像設定
-    background-image: url(../image/top/bg_top_fv_sp.png);
-    background-size: 100% auto; // 幅100%で高さを自動（比率通り）
-    background-repeat: no-repeat;
-    
-    @include pc {
-        background-image: url(../image/top/bg_top_fv_pc.png);
-    }
+
 
 
     h2 {
@@ -33,13 +27,47 @@
 }
 
 .top__fv-title {
-    width: 26rem;
+    position: absolute;
+    top: 3.2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transform-origin: top center;
+    width: vw(260, 375);
     margin: 0 auto;
+    z-index: 100;
 
     @include pc {
-        width: 65rem;
+        top: 3.9rem;
+        width: vw(650, 1400);
     }
 }
+
+.top__fv-image {
+    width: 100%;
+}
+
+// 縦書き
+.top__vertical-writing .inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .top__vertical-writing-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+
+    p {
+        writing-mode: vertical-rl;
+        line-height: calc(20rem / 12rem);
+        letter-spacing: 0.4em;
+        font-size: 2rem;
+    }
+    
+}
+
 
 // about
 .top__about {
@@ -47,6 +75,9 @@
     background-image: url(../image/top/bg_top_about_sp.png);
     background-size: 100% auto; // 幅100%で高さを自動（比率通り）
     background-repeat: no-repeat;
+
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     
     
 }

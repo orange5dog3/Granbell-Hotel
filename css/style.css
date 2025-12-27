@@ -495,6 +495,10 @@ a {
   }
 }
 
+.color-white {
+  color: #FAF6F1;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -885,7 +889,7 @@ footer a {
   font-size: 1.8rem;
   line-height: 1.8333333333;
   text-decoration: none;
-  color: #ffffff;
+  color: #FAF6F1;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -952,22 +956,14 @@ footer a {
 }
 
 .top__fv {
-  margin-top: 3.2rem;
-  padding-bottom: 6.2rem;
-  width: 100%;
-  background-image: url(../image/top/bg_top_fv_sp.png);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  padding-top: 7.6rem;
+  padding-bottom: 6rem;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .top__fv {
-    margin-top: 3.2rem;
-    padding-bottom: 12rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .top__fv {
-    background-image: url(../image/top/bg_top_fv_pc.png);
+    padding-top: 15.4rem;
+    padding-bottom: 12.5rem;
   }
 }
 .top__fv h2 {
@@ -985,17 +981,57 @@ footer a {
 }
 
 .top__fv-title {
-  width: 26rem;
+  position: absolute;
+  top: 3.2rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  width: 69.3333333333vw;
   margin: 0 auto;
+  z-index: 100;
 }
 @media screen and (min-width: 768px) {
   .top__fv-title {
-    width: 65rem;
+    top: 3.9rem;
+    width: 46.4285714286vw;
   }
+}
+
+.top__fv-image {
+  width: 100%;
+}
+
+.top__vertical-writing .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.top__vertical-writing .inner .top__vertical-writing-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.top__vertical-writing .inner p {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  line-height: 1.6666666667;
+  letter-spacing: 0.4em;
+  font-size: 2rem;
 }
 
 .top__about {
   background-image: url(../image/top/bg_top_about_sp.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
