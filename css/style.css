@@ -439,7 +439,7 @@ img {
 }
 
 .inner {
-  padding-inline: 3rem;
+  padding-inline: 2.75rem;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -966,19 +966,6 @@ footer a {
     padding-bottom: 12.5rem;
   }
 }
-.top__fv h2 {
-  margin-top: 63.6rem;
-}
-@media screen and (min-width: 768px) {
-  .top__fv h2 {
-    margin-top: 68.5rem;
-  }
-}
-.top__fv p {
-  margin-top: 2.4rem;
-  line-height: 2;
-  letter-spacing: 0.1em;
-}
 
 .top__fv-title {
   position: absolute;
@@ -1003,6 +990,24 @@ footer a {
   width: 100%;
 }
 
+.top__vertical-writing {
+  position: relative;
+}
+
+.top__vertical-writing__bg {
+  position: absolute;
+  top: -20rem;
+  right: 0;
+  width: 16rem;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .top__vertical-writing__bg {
+    top: -36rem;
+    width: 39rem;
+  }
+}
+
 .top__vertical-writing .inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1014,11 +1019,6 @@ footer a {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.top__vertical-writing .inner .top__vertical-writing-box {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 .top__vertical-writing .inner p {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -1026,6 +1026,56 @@ footer a {
   line-height: 1.6666666667;
   letter-spacing: 0.4em;
   font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .top__vertical-writing .inner p {
+    font-size: 4rem;
+  }
+}
+
+.top__vision {
+  margin-top: -6rem;
+  padding-bottom: 6rem;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .top__vision {
+    margin-top: -32rem;
+    padding-bottom: 12rem;
+  }
+}
+.top__vision p {
+  margin-top: 2.4rem;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+
+.top__vision__bg1 {
+  position: absolute;
+  top: -15rem;
+  left: 0;
+  width: 15.7rem;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .top__vision__bg1 {
+    top: -26rem;
+    left: 20rem;
+    width: 37rem;
+  }
+}
+
+.top__vision__bg2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 13.8rem;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .top__vision__bg2 {
+    width: 29.4rem;
+  }
 }
 
 .top__about {

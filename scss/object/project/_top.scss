@@ -12,18 +12,7 @@
 
 
 
-    h2 {
-        margin-top: 63.6rem;
-        @include pc {
-            margin-top: 68.5rem;
-        }
-    }
 
-    p {
-        margin-top: 2.4rem;
-        line-height: 2;
-        letter-spacing: 0.1em;
-    }
 }
 
 .top__fv-title {
@@ -47,25 +36,82 @@
 }
 
 // 縦書き
+
+.top__vertical-writing {
+    position: relative;
+}
+
+.top__vertical-writing__bg {
+    position: absolute;
+    top: -20rem;
+    right: 0;
+    width: 16rem;
+    z-index: -1;
+    @include pc {
+        top: -36rem;
+        width: 39rem;
+    }
+}
+
 .top__vertical-writing .inner {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-
-    .top__vertical-writing-box {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    
 
     p {
         writing-mode: vertical-rl;
         line-height: calc(20rem / 12rem);
         letter-spacing: 0.4em;
         font-size: 2rem;
+        @include pc {
+            font-size: 4rem;
+            // line-height: calc(40rem / 32rem);
+
+        }
     }
     
+}
+
+// vision
+.top__vision {
+    margin-top: -6rem;
+    padding-bottom: 6rem;
+    position: relative;
+    @include pc {
+        margin-top: -32rem;
+        padding-bottom: 12rem;
+    }
+
+
+    p {
+        margin-top: 2.4rem;
+        line-height: 2;
+        letter-spacing: 0.1em;
+    }
+}
+
+.top__vision__bg1 {
+    position: absolute;
+    top: -15rem;
+    left: 0;
+    width: 15.7rem;
+    z-index: -1;
+    @include pc {
+        top: -26rem;
+        left: 20rem;
+        width: 37rem;
+    }
+}
+
+.top__vision__bg2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 13.8rem;
+    z-index: -1;
+    @include pc {
+        width: 29.4rem;
+    }
 }
 
 
@@ -78,6 +124,4 @@
 
     padding-top: 6rem;
     padding-bottom: 6rem;
-    
-    
 }
