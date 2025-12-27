@@ -1,29 +1,87 @@
 // FV
 .top__fv {
-    margin-top: 3.2rem;
-    padding-bottom: 6.2rem;
+    padding-top: 7.6rem;
+    padding-bottom: 6rem;
+    position: relative;
+
+    @include pc {
+        padding-top: 15.4rem;
+        padding-bottom: 12.5rem;
+    }
+    
+
+
+
+
+}
+
+.top__fv-title {
+    position: absolute;
+    top: 3.2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transform-origin: top center;
+    width: vw(260, 375);
+    margin: 0 auto;
+    z-index: 100;
+
+    @include pc {
+        top: 3.9rem;
+        width: vw(650, 1400);
+    }
+}
+
+.top__fv-image {
     width: 100%;
-    @include pc {
-        margin-top: 3.2rem;
-        padding-bottom: 12rem;
-    }
-    
-    // 背景画像設定
-    background-image: url(../image/top/bg_top_fv_sp.png);
-    background-size: 100% auto; // 幅100%で高さを自動（比率通り）
-    background-repeat: no-repeat;
-    
-    @include pc {
-        background-image: url(../image/top/bg_top_fv_pc.png);
-    }
+}
 
+// 縦書き
 
-    h2 {
-        margin-top: 63.6rem;
+.top__vertical-writing {
+    position: relative;
+}
+
+.top__vertical-writing__bg {
+    position: absolute;
+    top: -20rem;
+    right: 0;
+    width: 16rem;
+    z-index: -1;
+    @include pc {
+        top: -36rem;
+        width: 39rem;
+    }
+}
+
+.top__vertical-writing .inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    p {
+        writing-mode: vertical-rl;
+        line-height: calc(20rem / 12rem);
+        letter-spacing: 0.4em;
+        font-size: 2rem;
         @include pc {
-            margin-top: 68.5rem;
+            font-size: 4rem;
+            // line-height: calc(40rem / 32rem);
+
         }
     }
+    
+}
+
+// vision
+.top__vision {
+    margin-top: -6rem;
+    padding-bottom: 6rem;
+    position: relative;
+    @include pc {
+        margin-top: -32rem;
+        padding-bottom: 12rem;
+    }
+
 
     p {
         margin-top: 2.4rem;
@@ -32,14 +90,30 @@
     }
 }
 
-.top__fv-title {
-    width: 26rem;
-    margin: 0 auto;
-
+.top__vision__bg1 {
+    position: absolute;
+    top: -15rem;
+    left: 0;
+    width: 15.7rem;
+    z-index: -1;
     @include pc {
-        width: 65rem;
+        top: -26rem;
+        left: 20rem;
+        width: 37rem;
     }
 }
+
+.top__vision__bg2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 13.8rem;
+    z-index: -1;
+    @include pc {
+        width: 29.4rem;
+    }
+}
+
 
 // about
 .top__about {
@@ -47,6 +121,7 @@
     background-image: url(../image/top/bg_top_about_sp.png);
     background-size: 100% auto; // 幅100%で高さを自動（比率通り）
     background-repeat: no-repeat;
-    
-    
+
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
