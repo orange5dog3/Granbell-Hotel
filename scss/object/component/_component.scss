@@ -3,3 +3,103 @@
 // 下層ページの見出し部分やパンくずリスト
 // 一覧ページのページネーション
 // サイト内で2回以上使うパーツが該当
+
+.c-round-box {
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px 0 rgba(54, 52, 51, 0.5);
+}
+
+// c-box
+// -------------------------
+
+.c-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.9rem;
+    position: relative;
+    @include pc {
+        flex-direction: row;
+        gap: 2.4rem;
+    }
+}
+
+.c-box-image {
+    width: 10rem;
+
+}
+
+.c-box-text {
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+.c-box-text-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+
+    @include pc {
+        align-items: start;
+        text-align: left;
+        gap: 1.5rem;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.4rem;
+        display: block;
+        @include pc {
+            text-align: left;
+        }
+        
+
+        &::after {
+            content: '';
+            display: block;
+            width: 6rem;
+            height: 1px;
+            background-color: $color-accent;
+            margin: 0.8rem auto 0; 
+
+            @include pc {
+                margin: 0.8rem 0 0;
+            }
+        }
+    }
+
+    p {
+        @include pc {
+            font-size: 2.4rem;
+            line-height: 1.4;
+        }
+    }
+
+}
+
+
+
+.c-box-text-content {
+    margin-top: 2.1rem;
+    line-height: 1.5;
+
+
+    @include pc {
+        margin-top: 0.8rem;
+    }
+}
+
+.c-box-link {
+    width: 3.4rem;
+    height: 3.4rem;
+    position: absolute;
+    bottom: 1.7rem;
+    right: 2.2rem;
+    @include pc {
+        bottom: 3.2rem;
+        right: 3.8rem;
+    }
+
+
+}
