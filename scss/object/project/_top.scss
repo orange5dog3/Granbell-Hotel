@@ -203,7 +203,6 @@
 
 
 .top__company {
-    position: relative;
     padding-top: 6rem;
     @include pc {
         padding-top: 12rem;
@@ -230,9 +229,39 @@
 
 // location
 .top__company-location {
+    position: relative;
+
     margin-top: 3.2rem;
+    padding-bottom: 7.2rem;
     @include pc {
         margin-top: 4rem;
+        padding-bottom: 0;
+    }
+
+    .top__company__location-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        @include pc {
+            top: 0;
+            bottom: auto;
+        }
+    }
+}
+
+.top__company-environment {
+    position: relative;
+    margin-top: 3.2rem;
+    padding-bottom: 7.2rem;
+    @include pc {
+        margin-top: 4rem;
+        padding-bottom: 8.8rem;
+    }
+
+    .top__company__environment-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
 
@@ -293,7 +322,7 @@
     align-items: flex-start;
 
     h4,p {
-        background-color: $color-bg-accent;
+        background-color: $color-accent;
         color: $color-white;
         padding: 0.4rem 2.4rem 0.4rem 1.6rem;
         letter-spacing: 0.1em;
@@ -308,8 +337,45 @@
             font-size: 2.4rem;
         }
     }
-
-
 }
 
-    
+.top__company-flex {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    @include pc {
+        flex-direction: row;
+        margin-top: 4rem;
+        gap: 2.5rem;
+    }
+}
+
+.top__company__flex-box {
+    padding: 1.6rem 7rem 1.6rem 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    @include pc {
+        padding: 3.2rem 4rem;
+        flex-direction: column-reverse;
+        gap: 2.4rem;
+    }
+
+    p {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color:$color-accent;
+    }
+}
+
+.top__company__flex__box-image {
+    width: 7.8rem;
+    @include pc {
+        width: 14rem;
+    }
+}
