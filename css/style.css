@@ -1676,4 +1676,10 @@ footer a {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+@media screen and (min-width: 768px) {
+  .top__career__grid-box:nth-child(3n+2) {
+    margin-top: 12rem;
+  }
 }/*# sourceMappingURL=style.css.map */
