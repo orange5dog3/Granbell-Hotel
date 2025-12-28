@@ -384,8 +384,10 @@
 // career-------------------------------------------
 .top__career {
     padding-top: 6rem;
+    padding-bottom: 6rem;
     @include pc {
         padding-top: 12rem;
+        padding-bottom: 12rem;
     }
 }
 
@@ -444,7 +446,6 @@
         font-weight: 700;
         font-size: 1.4rem;
         letter-spacing: 0.1em;
-        line-height: 1.5;
 
         span {
             font-size: 1.6rem;
@@ -474,7 +475,6 @@
 
     &-content {
         margin-top: 1.4rem;
-        line-height: 1.5;
     }
 }
 
@@ -488,5 +488,131 @@
 @include pc {
     .top__career__grid-box:nth-child(3n + 2) {
         margin-top: 12rem;
+    }
+}
+
+// recuit-------------------------------------------
+.top__recruit {
+
+    h2 {
+        margin-bottom: 4rem;
+    }
+
+    @include pc {
+        padding-top: 12rem;
+    }
+}
+
+.top__recruit__box {
+    padding: 10rem 0 8rem;
+    font-weight: 700;
+    position: relative;
+    border-radius: 4rem 4rem 0 0;
+    @include pc {
+        padding: 7.2rem 0 10rem;
+
+    }
+
+    .inner {
+        position: relative;
+    }
+
+    &-number {
+        font-size: 4rem;
+        line-height: 1;
+        position: absolute;
+        top: -4.5rem;
+        right: 2.75rem;
+        @include pc {
+            top: 0rem;
+            right: 3rem;
+        }
+
+    }
+
+    &-outline {
+        font-size: 2rem;
+        letter-spacing: 0.1em;
+        position: relative;
+        padding-left: 2rem;
+        @include pc {
+            font-size: 2.4rem;
+        }
+
+
+        &::before {
+            content: '';
+            display: block;
+            background-color: $color-white;
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left:0;
+            transform: translateY(-50%);
+        }
+    }
+
+    &-title {
+        font-size: 2rem;
+        margin-top: 1.6rem;
+        letter-spacing: 0.1em;
+        @include pc {
+            font-size: 3.2rem;
+            margin-top: 2.4rem;
+        }
+
+    }
+
+    &-content {
+        font-size: 1.6rem;
+        margin-top: 1.6rem;
+        letter-spacing: 0.1em;
+        @include pc {
+            margin-top: 2.4rem;
+        }
+    }
+
+    &-btn {
+        margin-top: 1.6rem;
+        display: flex;
+        flex-direction: row-reverse;
+        @include pc {
+            margin-top: 2.4rem;
+        }
+    }
+
+}
+
+// 擬似要素円の色だけ定義
+.color-gray-bg {
+
+    .top__recruit__box-outline {
+        &::before {
+            background-color: $color-accent;
+        }
+    }
+}
+
+.top__recruit__box-negative-margin {
+    margin-top: -4rem;
+}
+
+// join the team-------------------------------------------
+.top__join-the-team {
+    padding: 2rem 0;
+    @include pc {
+        padding: 8rem 0;
+    }
+
+    p {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 1;
+        color: rgba(#894A23, 0.2);
+        @include pc {
+            font-size: 12rem;
+        }
     }
 }
