@@ -38,6 +38,8 @@ include 'header.php';
 
 
 
+
+
     <section class="top__vision">
         <div class="top__vision__bg1">
             <picture>
@@ -96,7 +98,7 @@ include 'header.php';
                             自分らしく力を発揮できる環境が、グランベルホテルの未来を創り続けています。</p>
                     </div>
                     <a href="#" class="c-box-link">
-                        <img src="image/common/logo_link.svg" alt="">
+                        <?php echo get_icon_triangle(); ?>
                     </a>
                 </div>
                 <div class="top__about__flex-child">
@@ -111,7 +113,7 @@ include 'header.php';
                             </div>
                         </div>
                         <a href="#" class="c-box-link">
-                            <img src="image/common/logo_link.svg" alt="">
+                            <?php echo get_icon_triangle(); ?>
                         </a>
                     </div>
                     <div class="c-round-box c-box color-base-white-bg top__about-box">
@@ -125,12 +127,15 @@ include 'header.php';
                             </div>
                         </div>
                         <a href="#" class="c-box-link">
-                            <img src="image/common/logo_link.svg" alt="">
+                            <?php echo get_icon_triangle(); ?>
                         </a>
                     </div>
 
                 </div>
             </div>
+
+
+
         </div>
 
 
@@ -219,11 +224,55 @@ include 'header.php';
                     </div>
 
                 </div>
+                
+                <a href="#" class="c-btn c-black-btn top__company__location-btn">
+                    <span>拠点を知る</span>
+                    <?php echo get_icon_triangle(); ?>
+                </a>
+
+
             </div>
 
             <div class="top__company-environment">
-                <h3>私たちの拠点</h3>
-                <p>様々なポジションで<br>マルチタスクに挑戦できる環境</p>
+                <h3>様々なポジションで<br>マルチタスクに挑戦できる環境</h3>
+
+                <div class="top__company-flex">
+                    <div class="top__company__flex-box  c-round-box color-white-bg">
+                        <div class="top__company__flex__box-image">
+                            <img src="image/top/logo_top_company1.svg" alt="宿泊部門<">
+                        </div>
+                        <p>宿泊部門</p>
+                    </div>
+                    <div class="top__company__flex-box c-round-box color-white-bg">
+                        <div class="top__company__flex__box-image">
+                            <img src="image/top/logo_top_company2.svg" alt="料飲部門">
+                        </div>
+                        <p>料飲部門</p>
+                    </div>
+                    <div class="top__company__flex-box c-round-box color-white-bg">
+                        <div class="top__company__flex__box-image">
+                            <img src="image/top/logo_top_company3.svg" alt="調理部門">
+                        </div>
+                        <p>調理部門</p>
+                    </div>
+                    <div class="top__company__flex-box c-round-box color-white-bg">
+                        <div class="top__company__flex__box-image">
+                            <img src="image/top/logo_top_company4.svg" alt="管理部門">
+                        </div>
+                        <p>管理部門</p>
+                    </div>
+                    <div class="top__company__flex-box c-round-box color-white-bg">
+                        <div class="top__company__flex__box-image">
+                            <img src="image/top/logo_top_company5.svg" alt="営業部門">
+                        </div>
+                        <p>営業部門</p>
+                    </div>
+                </div>
+
+                <a href="#" class="c-btn c-black-btn top__company__environment-btn">
+                    <span>ポジションを知る</span>
+                    <?php echo get_icon_triangle(); ?>
+                </a>
             </div>
         </div>
     </section>
