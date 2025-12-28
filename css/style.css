@@ -976,6 +976,19 @@ footer a {
   height: 1.3rem;
 }
 
+.c-white-btn {
+  background-color: #FFFFFF;
+  border: 1px solid #454241;
+  color: #454241;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+.c-white-btn .icon-triangle {
+  color: #454241;
+  width: 1.1rem;
+  height: 1.3rem;
+}
+
 .hamburger {
   position: relative;
   width: 3rem;
@@ -1549,4 +1562,118 @@ footer a {
   .top__company__flex__box-image {
     width: 14rem;
   }
+}
+
+.top__career {
+  padding-top: 6rem;
+}
+@media screen and (min-width: 768px) {
+  .top__career {
+    padding-top: 12rem;
+  }
+}
+
+.top__career-grid {
+  margin-top: 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+@media screen and (min-width: 768px) {
+  .top__career-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 4rem;
+    -webkit-column-gap: 6rem;
+       -moz-column-gap: 6rem;
+            column-gap: 6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top__career__grid-box {
+    width: 36rem;
+    position: relative;
+  }
+}
+
+.top__career__grid__box-image {
+  width: 24rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .top__career__grid__box-image {
+    width: 100%;
+  }
+}
+
+.top__career__grid__box-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+  color: #FF8426;
+  border-bottom: 1px solid #FF8426;
+}
+@media screen and (min-width: 768px) {
+  .top__career__grid__box-number {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    border-bottom: none;
+    color: #FFFFFF;
+  }
+}
+.top__career__grid__box-number h3 {
+  font-size: 5rem;
+  letter-spacing: -0.02em;
+}
+.top__career__grid__box-number p {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+.top__career__grid__box-number p span {
+  font-size: 1.6rem;
+}
+
+.top__career__grid__box-text {
+  margin-top: 1.6rem;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .top__career__grid__box-text {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    margin-top: 0;
+    border-radius: 0 0 2rem 2rem;
+  }
+}
+.top__career__grid__box-text-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.top__career__grid__box-text-content {
+  margin-top: 1.4rem;
+  line-height: 1.5;
+}
+
+.top__career__grid__box-btn {
+  margin-top: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }/*# sourceMappingURL=style.css.map */

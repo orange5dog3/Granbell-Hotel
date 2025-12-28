@@ -140,5 +140,18 @@
         width: 1.1rem;
         height: 1.3rem;
     }
+}
 
+.c-white-btn {
+    background-color: $color-white;
+    border: 1px solid $color-text;
+    color: $color-text;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+
+    .icon-triangle {
+        color: $color-text;
+        width: 1.1rem;
+        height: 1.3rem;
+    }
 }
