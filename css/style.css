@@ -20,7 +20,6 @@
  * 3. Remove gray overlay on links for iOS.
  */
 html {
-  line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -webkit-tap-highlight-color: transparent; /* 3*/
 }
@@ -475,6 +474,7 @@ a {
   font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: 0.1em;
+  line-height: 1;
 }
 @media screen and (min-width: 768px) {
   .section-title {
@@ -504,6 +504,15 @@ a {
 
 .color-white-bg {
   background-color: #FFFFFF;
+}
+
+.color-accent-bg {
+  color: #FFFFFF;
+  background-color: #FF8426;
+}
+
+.color-gray-bg {
+  background-color: #E8DFD4;
 }
 
 .header {
@@ -655,7 +664,6 @@ footer a {
 @media screen and (min-width: 768px) {
   .footer__content p {
     font-size: 2.5rem;
-    line-height: 1.5;
   }
 }
 
@@ -907,7 +915,6 @@ footer a {
 
 .c-box-text-content {
   margin-top: 2.1rem;
-  line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
   .c-box-text-content {
@@ -972,6 +979,19 @@ footer a {
 }
 .c-black-btn .icon-triangle {
   color: #FFFFFF;
+  width: 1.1rem;
+  height: 1.3rem;
+}
+
+.c-white-btn {
+  background-color: #FFFFFF;
+  border: 1px solid #454241;
+  color: #454241;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+.c-white-btn .icon-triangle {
+  color: #454241;
   width: 1.1rem;
   height: 1.3rem;
 }
@@ -1056,8 +1076,6 @@ footer a {
 .hamburger-menu nav ul li a {
   display: block;
   padding: 1.5rem 0 1.5rem 2rem;
-  font-size: 1.8rem;
-  line-height: 1.8333333333;
   text-decoration: none;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -1548,5 +1566,249 @@ footer a {
 @media screen and (min-width: 768px) {
   .top__company__flex__box-image {
     width: 14rem;
+  }
+}
+
+.top__career {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media screen and (min-width: 768px) {
+  .top__career {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+}
+
+.top__career-grid {
+  margin-top: 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+@media screen and (min-width: 768px) {
+  .top__career-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 4rem;
+    -webkit-column-gap: 6rem;
+       -moz-column-gap: 6rem;
+            column-gap: 6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top__career__grid-box {
+    width: 36rem;
+    position: relative;
+  }
+}
+
+.top__career__grid__box-image {
+  width: 24rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .top__career__grid__box-image {
+    width: 100%;
+  }
+}
+
+.top__career__grid__box-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+  color: #FF8426;
+  border-bottom: 1px solid #FF8426;
+}
+@media screen and (min-width: 768px) {
+  .top__career__grid__box-number {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    border-bottom: none;
+    color: #FFFFFF;
+  }
+}
+.top__career__grid__box-number h3 {
+  font-size: 5rem;
+  letter-spacing: -0.02em;
+}
+.top__career__grid__box-number p {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+}
+.top__career__grid__box-number p span {
+  font-size: 1.6rem;
+}
+
+.top__career__grid__box-text {
+  margin-top: 1.6rem;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .top__career__grid__box-text {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    margin-top: 0;
+    border-radius: 0 0 2rem 2rem;
+  }
+}
+.top__career__grid__box-text-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.top__career__grid__box-text-content {
+  margin-top: 1.4rem;
+}
+
+.top__career__grid__box-btn {
+  margin-top: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media screen and (min-width: 768px) {
+  .top__career__grid-box:nth-child(3n+2) {
+    margin-top: 12rem;
+  }
+}
+.top__recruit h2 {
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .top__recruit {
+    padding-top: 12rem;
+  }
+}
+
+.top__recruit__box {
+  padding: 10rem 0 8rem;
+  font-weight: 700;
+  position: relative;
+  border-radius: 4rem 4rem 0 0;
+}
+@media screen and (min-width: 768px) {
+  .top__recruit__box {
+    padding: 7.2rem 0 10rem;
+  }
+}
+.top__recruit__box .inner {
+  position: relative;
+}
+.top__recruit__box-number {
+  font-size: 4rem;
+  line-height: 1;
+  position: absolute;
+  top: -4.5rem;
+  right: 2.75rem;
+}
+@media screen and (min-width: 768px) {
+  .top__recruit__box-number {
+    top: 0rem;
+    right: 3rem;
+  }
+}
+.top__recruit__box-outline {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  position: relative;
+  padding-left: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .top__recruit__box-outline {
+    font-size: 2.4rem;
+  }
+}
+.top__recruit__box-outline::before {
+  content: "";
+  display: block;
+  background-color: #FFFFFF;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.top__recruit__box-title {
+  font-size: 2rem;
+  margin-top: 1.6rem;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .top__recruit__box-title {
+    font-size: 3.2rem;
+    margin-top: 2.4rem;
+  }
+}
+.top__recruit__box-content {
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .top__recruit__box-content {
+    margin-top: 2.4rem;
+  }
+}
+.top__recruit__box-btn {
+  margin-top: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+@media screen and (min-width: 768px) {
+  .top__recruit__box-btn {
+    margin-top: 2.4rem;
+  }
+}
+
+.color-gray-bg .top__recruit__box-outline::before {
+  background-color: #FF8426;
+}
+
+.top__recruit__box-negative-margin {
+  margin-top: -4rem;
+}
+
+.top__join-the-team {
+  padding: 2rem 0;
+}
+@media screen and (min-width: 768px) {
+  .top__join-the-team {
+    padding: 8rem 0;
+  }
+}
+.top__join-the-team p {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(137, 74, 35, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .top__join-the-team p {
+    font-size: 12rem;
   }
 }/*# sourceMappingURL=style.css.map */

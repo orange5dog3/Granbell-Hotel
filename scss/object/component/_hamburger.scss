@@ -84,7 +84,6 @@
                 a {
                     display: block;
                     padding: 1.5rem 0 1.5rem 2rem;
-                    @include text-style(1.8rem, calc(33/18));
                     text-decoration: none;
                     @include transition;
                 }

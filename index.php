@@ -277,6 +277,244 @@ include 'header.php';
         </div>
     </section>
 
+    <section class="top__career">
+        <div class="inner">
+            <h2 class="section-title">CAREER<br><span>描けるキャリア</span></h2>
+
+            <div class="top__career-grid">
+
+                <div class="top__career__grid-box">
+                    <div class="top__career__grid__box-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="image/top/image_top_career_pc.png">
+                            <img src="image/top/image_top_career_sp.png" alt="キャリア">
+                        </picture>
+                    </div>
+                    <div class="top__career__grid__box-number">
+                        <h3>01</h3>
+                        <p>Granbell Hotel Group<br><span>CAREER</span></p>
+                    </div>
+                    <div class="top__career__grid__box-text">
+                        <p class="top__career__grid__box-text-title">都市型ホテル/支配人</p>
+                        <p class="top__career__grid__box-text-content">目指すは日本一のホテル。<br>
+                            視野は広く、視点は高く<br>
+                            ホテル業務にマルチに関わる</p>
+                        <div class="top__career__grid__box-btn">
+                            <a href="#" class="c-btn c-white-btn">
+                                <span>詳しく知る</span>
+                                <?php echo get_icon_triangle(); ?>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top__career__grid-box">
+                    <div class="top__career__grid__box-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="image/top/image_top_career_pc.png">
+                            <img src="image/top/image_top_career_sp.png" alt="キャリア">
+                        </picture>
+                    </div>
+                    <div class="top__career__grid__box-number">
+                        <h3>02</h3>
+                        <p>Granbell Hotel Group<br><span>CAREER</span></p>
+                    </div>
+                    <div class="top__career__grid__box-text">
+                        <p class="top__career__grid__box-text-title">リゾートホテル/フロント</p>
+                        <p class="top__career__grid__box-text-content">若手ならではの視点で<br>
+                            ラグジュアリーホテルの<br>
+                            サービスを考える</p>
+                        <div class="top__career__grid__box-btn">
+                            <a href="#" class="c-btn c-white-btn">
+                                <span>詳しく知る</span>
+                                <?php echo get_icon_triangle(); ?>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top__career__grid-box">
+                    <div class="top__career__grid__box-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="image/top/image_top_career_pc.png">
+                            <img src="image/top/image_top_career_sp.png" alt="キャリア">
+                        </picture>
+                    </div>
+                    <div class="top__career__grid__box-number">
+                        <h3>03</h3>
+                        <p>Granbell Hotel Group<br><span>CAREER</span></p>
+                    </div>
+                    <div class="top__career__grid__box-text">
+                        <p class="top__career__grid__box-text-title">リゾートホテル/レストラン</p>
+                        <p class="top__career__grid__box-text-content">最高の時間と空間を<br>
+                            最高の仲間と<br>
+                            共につくりあげていく</p>
+                        <div class="top__career__grid__box-btn">
+                            <a href="#" class="c-btn c-white-btn">
+                                <span>詳しく知る</span>
+                                <?php echo get_icon_triangle(); ?>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top__career__grid-box">
+                    <div class="top__career__grid__box-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="image/top/image_top_career_pc.png">
+                            <img src="image/top/image_top_career_sp.png" alt="キャリア">
+                        </picture>
+                    </div>
+                    <div class="top__career__grid__box-number">
+                        <h3>04</h3>
+                        <p>Granbell Hotel Group<br><span>CAREER</span></p>
+                    </div>
+                    <div class="top__career__grid__box-text">
+                        <p class="top__career__grid__box-text-title">都市型ホテル/マネージャー</p>
+                        <p class="top__career__grid__box-text-content">リゾート・海外・都市型<br>
+                            それぞれで得た経験で<br>
+                            ホテル全体をマネジメントする</p>
+                        <div class="top__career__grid__box-btn">
+                            <a href="#" class="c-btn c-white-btn">
+                                <span>詳しく知る</span>
+                                <?php echo get_icon_triangle(); ?>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top__career__grid-box">
+                    <div class="top__career__grid__box-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="image/top/image_top_career_pc.png">
+                            <img src="image/top/image_top_career_sp.png" alt="キャリア">
+                        </picture>
+                    </div>
+                    <div class="top__career__grid__box-number">
+                        <h3>05</h3>
+                        <p>Granbell Hotel Group<br><span>CAREER</span></p>
+                    </div>
+                    <div class="top__career__grid__box-text">
+                        <p class="top__career__grid__box-text-title">都市型ホテル/調理</p>
+                        <p class="top__career__grid__box-text-content">作り手によって味も見た目も<br>
+                            変わる魔法のような料理で<br>
+                            お客様を笑顔に</p>
+                        <div class="top__career__grid__box-btn">
+                            <a href="#" class="c-btn c-white-btn">
+                                <span>詳しく知る</span>
+                                <?php echo get_icon_triangle(); ?>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top__career__grid-box">
+                    <div class="top__career__grid__box-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="image/top/image_top_career_pc.png">
+                            <img src="image/top/image_top_career_sp.png" alt="キャリア">
+                        </picture>
+                    </div>
+                    <div class="top__career__grid__box-number">
+                        <h3>06</h3>
+                        <p>Granbell Hotel Group<br><span>CAREER</span></p>
+                    </div>
+                    <div class="top__career__grid__box-text">
+                        <p class="top__career__grid__box-text-title">リゾートホテル/支配人</p>
+                        <p class="top__career__grid__box-text-content">新たなチャレンジを続け<br>
+                            支配人として<br>
+                            ホテルの価値を高めていく</p>
+                        <div class="top__career__grid__box-btn">
+                            <a href="#" class="c-btn c-white-btn">
+                                <span>詳しく知る</span>
+                                <?php echo get_icon_triangle(); ?>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="top__recruit">
+        <div class="inner">
+            <h2 class="section-title">RECRUIT<br><span>採用情報</span></h2>
+        </div>
+
+        <div class="top__recruit-box top__recruit__box color-gray-bg">
+            <div class="inner">
+                <p class="top__recruit__box-number">01</p>
+                <p class="top__recruit__box-outline">募集要項</p>
+                <p class="top__recruit__box-title">あなたに合ったポジションと<br>働き方を見つけてください。</p>
+                <p class="top__recruit__box-content">
+                    あなたの挑戦が活きるフィールドを、全国にご用意しています。<br>総合職・勤務地限定職、さまざま働き方があります。
+                </p>
+                <div class="top__recruit__box-btn">
+                    <a href="#" class="c-btn c-black-btn">
+                        <span>募集要項を見る</span>
+                        <?php echo get_icon_triangle(); ?>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="top__recruit-box top__recruit__box color-accent-bg top__recruit__box-negative-margin">
+            <div class="inner">
+                <p class="top__recruit__box-number">02</p>
+                <p class="top__recruit__box-outline">採用チームからのメッセージ</p>
+                <p class="top__recruit__box-title">若手もベテランも、<br>想いを形にできる場所。</p>
+                <p class="top__recruit__box-content">
+                私たちは、あなたの「やってみたい」を全力で応援します。<br>一歩踏み出す勇気が、未来のグランベルをつくります。
+                </p>
+                <div class="top__recruit__box-btn">
+                    <a href="#" class="c-btn c-black-btn">
+                        <span>先輩の声を見る</span>
+                        <?php echo get_icon_triangle(); ?>
+                    </a>
+                </div>  
+            </div>
+        </div>
+
+        <div class="top__recruit-box top__recruit__box color-gray-bg top__recruit__box-negative-margin">
+            <div class="inner">
+                <p class="top__recruit__box-number">03</p>
+                <p class="top__recruit__box-outline">福利厚生&社員寮紹介</p>
+                <p class="top__recruit__box-title">「働きやすさ」も<br>「暮らしやすさ」も大切に。</p>
+                <p class="top__recruit__box-content">
+                    安心して長く働ける制度と、成長を支える教育環境。<br>“人”の可能性を育てる仕組みが、ここにはあります。
+                </p>
+                <div class="top__recruit__box-btn">
+                    <a href="#" class="c-btn c-black-btn">
+                        <span>福利厚生を見る</span>
+                        <?php echo get_icon_triangle(); ?>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="top__recruit-box top__recruit__box color-accent-bg top__recruit__box-negative-margin">
+            <div class="inner">
+                <p class="top__recruit__box-number">04</p>
+                <p class="top__recruit__box-outline">採用FAQ</p>
+                <p class="top__recruit__box-title">働く前に気になること、<br>まとめてご紹介。</p>
+                <p class="top__recruit__box-content">
+                    仕事の流れからキャリアアップまで、リアルな疑問にお答えします。<br>“未来の自分”を具体的に思い描けるはずです。
+                </p>
+                <div class="top__recruit__box-btn">
+                    <a href="#" class="c-btn c-black-btn">
+                        <span>FAQを見る</span>
+                        <?php echo get_icon_triangle(); ?>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="top__join-the-team">
+        <p>JOIN THE TEAM</p>
+    </div>
+
 
 
 </main>

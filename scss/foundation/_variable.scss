@@ -8,12 +8,6 @@
 // フォントファミリー
 $font-family-base: "YuGothic", "Yu Gothic", "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
 
-// フォントサイズ
-@mixin text-style($size, $lineHeight) {
-    font-size: $size;
-    line-height: $lineHeight;
-}
-
 // カラーパレット
 // -------------------------
 $color-hover: #FF5A37; // アクセントカラー
@@ -21,6 +15,7 @@ $color-accent: #FF8426; // アクセントカラー
 $color-text: #454241; // テキスト
 $color-base-white: #FAF6F1; // 白
 $color-white: #FFFFFF; // 白
+$color-gray: #E8DFD4; // グレー
 
 $color-bg: rgba(250, 246, 241, 0.5); // ページ背景
 
