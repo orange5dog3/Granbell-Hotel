@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * PlayアイコンのSVGを取得する関数
+ * 
+ * @param string $className 追加したいクラス名（例: "text-red"）
+ * @return string SVGタグのHTML
+ */
+function get_icon_play($className = '') {
+    // クラス名がある場合はスペースを空けて追加
+    $classAttr = $className ? ' ' . $className : '';
+    
+    return <<<HTML
+<svg class="icon-play{$classAttr}" width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5 5.33171C11.1667 5.71661 11.1667 6.67886 10.5 7.06376L1.5 12.2599C0.833332 12.6448 -5.63621e-07 12.1637 -5.29972e-07 11.3939L-7.57103e-08 1.00158C-4.20613e-08 0.23178 0.833333 -0.249344 1.5 0.135556L10.5 5.33171Z" fill="currentColor"/>
+</svg>
+HTML;
+}
