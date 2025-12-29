@@ -13,6 +13,24 @@ $(".hamburger-trigger").click(
     $("body").toggleClass("menu-open", menuOpen);
 });
 
+
+
+// ==========================================================================
+// footer accordion
+// ==========================================================================
+$('.footer__accordion-trigger').on('click', function () {
+  // SPサイズ（767px以下）のみアコーディオンを有効化
+  if (window.innerWidth <= 767) {
+    const $content = $(this).next('.footer__accordion-content');
+
+    $content
+      .stop(true, true)
+      .slideToggle(300);
+  }
+});
+
+
+
 // ==========================================================================
 // fixed-btn
 // ==========================================================================
@@ -57,30 +75,4 @@ $(function () {
   
     // 初回チェック
     applyVisibility();
-});
-
-// ==========================================================================
-// swiper
-// ==========================================================================
-const swiper = new Swiper('.swiper', {
-  loop: true, // 連続ループ
-
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false, 
-  },
-
-  // ここからフェード設定
-  effect: 'fade',
-  speed: 3000, 
-
-  fadeEffect: {
-    crossFade: true, 
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
 });
