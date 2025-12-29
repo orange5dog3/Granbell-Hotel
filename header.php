@@ -25,7 +25,7 @@
             <div class="header-content">
                 <h1 class="header__logo">
                     <a href="#">
-                        <img src="image/common/logo.png" alt="グランベルホテル">
+                        <img src="image/common/header_logo.png" alt="グランベルホテル">
                     </a>
                 </h1>
 
@@ -41,7 +41,7 @@
                                     <span>描けるキャリア</span></a></li>
                             <li><a href="#">RECRUIT<br>
                                     <span>採用情報</span></a></li>
-                            <li><a href="#" class="btn-entry">ENTRY</a></li>
+                            <li><a href="#" class="btn-entry btn-header">ENTRY</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -49,7 +49,7 @@
                 <!-- SP header -->
                 <div class="sp__header pc_none">
                     <!-- SP entry button -->
-                    <a href="#" class="btn-entry">ENTRY</a>
+                    <a href="#" class="btn-entry btn-header">ENTRY</a>
 
                     <!-- SP hamburger menu -->
                     <!-- SP hamburger menu 外観 -->
@@ -69,7 +69,7 @@
                                         <span>描けるキャリア</span></a></li>
                                 <li><a href="#">RECRUIT<br>
                                         <span>採用情報</span></a></li>
-                                <li><a href="#" class="btn-entry">ENTRY</a></li>
+                                <li><a href="#" class="btn-entry btn-header">ENTRY</a></li>
                             </ul>
                         </nav>
                     </div>
