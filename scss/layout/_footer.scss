@@ -99,8 +99,11 @@ footer {
         font-size: 1.4rem;
         font-weight: 700;
         line-height: 1;
+        cursor: pointer;
+      
         @include pc {
             font-size: 1.6rem;
+            cursor: default;
         }
 
         &::before {
@@ -118,9 +121,37 @@ footer {
                 height: 2em;
             }
         }
+
+        @include sp {
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1.2rem;
+                height: 1.4rem;
+                background-image: url('/image/common/logo_accordion-toggle.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: transform 0.3s ease;
+            }
+        }
     }
+
+    // 開いた状態：三角形を反転
+    &.is-open {
+        @include sp {
+            p::after {
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+    }
+
     ul {
         margin-top: 1.2rem;
+   
         @include pc {
             margin-top: 0.8rem;
         }
@@ -130,10 +161,20 @@ footer {
             }
         }
     }
+
+    // SPのみアコーディオン機能
+    @include sp {
+        .footer__accordion-content {
+            display: none;
+        }
+
+        &.is-open {
+            .footer__accordion-content {
+                display: block;
+            }
+        }
+    }
 }
-
-
-
 .footer__logo {
     margin-top: 1.2rem;
     width: 14rem;

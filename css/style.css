@@ -694,10 +694,12 @@ footer {
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .footer__content-box p {
     font-size: 1.6rem;
+    cursor: default;
   }
 }
 .footer__content-box p::before {
@@ -717,6 +719,32 @@ footer {
     height: 2em;
   }
 }
+@media screen and (max-width: 767px) {
+  .footer__content-box p::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 1.2rem;
+    height: 1.4rem;
+    background-image: url("/image/common/logo_accordion-toggle.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__content-box.is-open p::after {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg);
+  }
+}
 .footer__content-box ul {
   margin-top: 1.2rem;
 }
@@ -727,6 +755,14 @@ footer {
 }
 .footer__content-box ul li a {
   font-size: 1.4rem;
+}
+@media screen and (max-width: 767px) {
+  .footer__content-box .footer__accordion-content {
+    display: none;
+  }
+  .footer__content-box.is-open .footer__accordion-content {
+    display: block;
+  }
 }
 
 .footer__logo {

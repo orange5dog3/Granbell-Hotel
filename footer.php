@@ -25,16 +25,16 @@
 
                     <div class="footer__content">
                         <div class="footer__content-box">
-                            <p class="footer__content-outline">ABOUT US</p>
-                            <ul>
+                            <p class="footer__content-outline footer__accordion-trigger">ABOUT US</p>
+                            <ul class="footer__accordion-content">
                                 <li><a href="#">・数字からみるグランベルホテル</a></li>
                                 <li><a href="#">・グランベルホテルの挑戦</a></li>
                                 <li><a href="#">・経営理念 / 会社概要</a></li>
                             </ul>
                         </div>
                         <div class="footer__content-box">
-                            <p class="footer__content-outline">COMPANY</p>
-                            <ul>
+                            <p class="footer__content-outline footer__accordion-trigger">COMPANY</p>
+                            <ul class="footer__accordion-content">
                                 <li><a href="#">・拠点特徴紹介</a></li>
                                 <li><a href="#">・職種紹介</a></li>
                             </ul>
@@ -42,8 +42,8 @@
                     </div>
 
                     <div class="footer__content-box">
-                        <p class="footer__content-outline">CAREER</p>
-                        <ul>
+                        <p class="footer__content-outline footer__accordion-trigger">CAREER</p>
+                        <ul class="footer__accordion-content">
                             <li><a href="#">・CAREER 01 | 都市型ホテル支配人</a></li>
                             <li><a href="#">・CAREER 02 | リゾートホテルフロント</a></li>
                             <li><a href="#">・CAREER 03 | リゾートホテルレストラン</a></li>
@@ -54,8 +54,8 @@
                     </div>
 
                     <div class="footer__content-box">
-                        <p class="footer__content-outline">RECRUIT</p>
-                        <ul>
+                        <p class="footer__content-outline footer__accordion-trigger">RECRUIT</p>
+                        <ul class="footer__accordion-content">
                             <li><a href="#">・募集要項</a></li>
                             <li><a href="#">・採用チームからのメッセージ</a></li>
                             <li><a href="#">・福利厚生 ＆ 社員寮紹介</a></li>
@@ -64,8 +64,8 @@
                     </div>
 
                     <div class="footer__content-box">
-                        <p class="footer__content-outline">ENTRY</p>
-                        <ul>
+                        <p class="footer__content-outline footer__accordion-trigger">ENTRY</p>
+                        <ul class="footer__accordion-content">
                             <li><a href="#">・マイナビ2026</a></li>
                             <li><a href="#">・マイナビ2027</a></li>
                             <li><a href="#">・リクナビ2026</a></li>

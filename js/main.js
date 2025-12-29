@@ -18,25 +18,18 @@ $(".hamburger-trigger").click(
 // ==========================================================================
 // footer accordion
 // ==========================================================================
+$('.footer__accordion-trigger').on('click', function () {
+  // SPサイズ（767px以下）のみアコーディオンを有効化
+  if (window.innerWidth <= 767) {
+    const $content = $(this).next('.footer__accordion-content');
 
-
-$(".footer__accordion-trigger").click(function(){
-  var $item = $(this).closest(".question__box-item");
-  var $answer = $item.find(".question__card-a");
-
-  $item.toggleClass("is-open");
-
-  if ($item.hasClass("is-open")) {
-      $answer
-        .css("display", "flex")
-        .hide()
-        .slideDown(300);
-  } else {
-      $answer.slideUp(300, function() {
-        $(this).css("display", "none");
-      });
+    $content
+      .stop(true, true)
+      .slideToggle(300);
   }
 });
+
+
 
 // ==========================================================================
 // fixed-btn
