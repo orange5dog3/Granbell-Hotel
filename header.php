@@ -3,23 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>株式会社グランベルホテル | 新卒採用情報</title>
+    <meta name="keywords" content="GRANBELL HOTEL GROUP, ホテル、サービス、接客,採用,新卒">
+    <meta name="description" content="株式会社グランベルホテルの新卒採用情報をご覧いただけます。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRANBELL HOTEL GROUP</title>
-    <link rel="icon" href="image/top/logo_header.svg">
+    <link rel="icon" href="image/top/logo_header.png">
 
-
-    <meta property="og:title" content="GRANBELL HOTEL GROUP | 「音楽で生きる」を叶えるミュージックスクール">
+    <!--OGP-->
+    <meta property="og:title" content="株式会社グランベルホテル 新卒採用情報">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://orange-david.com/middle-class-upper/">
-    <link rel="canonical" href="https://orange-david.com/middle-class-upper/">
-    <meta property="og:image" content="https://orange-david.com/middle-class-upper/image/top/image_top_fv.jpeg">
-    <meta property="og:site_name" content="きたむらミュージックスクール">
-    <meta property="og:description" content="全人類、ミュージシャン計画。私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。">
+    <!-- <meta property="og:url" content="">
+    <meta property="og:image" content=""> -->
+    <meta property="og:site_name" content="株式会社グランベルホテル 新卒採用情報">
+    <meta property="og:description" content="株式会社グランベルホテルの新卒採用情報をご覧いただけます。">
+    <meta property="og:locale" content="ja_JP">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+ 
 </head>
 
 <body>
+   
     <div id="container">
         <header class="header">
             <div class="header-content">

@@ -13,6 +13,31 @@ $(".hamburger-trigger").click(
     $("body").toggleClass("menu-open", menuOpen);
 });
 
+
+
+// ==========================================================================
+// footer accordion
+// ==========================================================================
+
+
+$(".footer__accordion-trigger").click(function(){
+  var $item = $(this).closest(".question__box-item");
+  var $answer = $item.find(".question__card-a");
+
+  $item.toggleClass("is-open");
+
+  if ($item.hasClass("is-open")) {
+      $answer
+        .css("display", "flex")
+        .hide()
+        .slideDown(300);
+  } else {
+      $answer.slideUp(300, function() {
+        $(this).css("display", "none");
+      });
+  }
+});
+
 // ==========================================================================
 // fixed-btn
 // ==========================================================================
@@ -57,30 +82,4 @@ $(function () {
   
     // 初回チェック
     applyVisibility();
-});
-
-// ==========================================================================
-// swiper
-// ==========================================================================
-const swiper = new Swiper('.swiper', {
-  loop: true, // 連続ループ
-
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false, 
-  },
-
-  // ここからフェード設定
-  effect: 'fade',
-  speed: 3000, 
-
-  fadeEffect: {
-    crossFade: true, 
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
 });
