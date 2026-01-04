@@ -10,7 +10,7 @@ $font-family-base: "YuGothic", "Yu Gothic", "Noto Sans JP", "Hiragino Kaku Gothi
 
 // カラーパレット
 // -------------------------
-$color-hover: #FF5A37; // アクセントカラー
+$color-hover: #FF5A37; // ホバーカラー
 $color-accent: #FF8426; // アクセントカラー
 $color-text: #454241; // テキスト
 $color-base-white: #FAF6F1; // 白
@@ -19,6 +19,7 @@ $color-gray: #E8DFD4; // グレー
 $color-footer: #454241; // 黒
 
 $color-bg: rgba(250, 246, 241, 0.5); // ページ背景
+
 
 
 
@@ -48,8 +49,12 @@ $color-bg: rgba(250, 246, 241, 0.5); // ページ背景
     opacity: 0.5;
 }
 
-@mixin hover-reversecolor {
-    color: $color-main;
+@mixin hover-hover-color {
+    color: $color-hover;
+}
+
+@mixin hover-reverse-color {
+    color: $color-hover;
     background-color: $color-white;
 }
 

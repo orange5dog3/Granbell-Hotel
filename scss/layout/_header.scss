@@ -33,6 +33,15 @@
         width: 11rem;
         height: 6rem;
     }
+
+    a {
+        @include transition;
+
+        &:hover {
+            @include hover-opacity;
+            @include hover-bigger;
+        }
+    }
 }
 
 
@@ -56,11 +65,19 @@
         font-size: 1.6rem;
         letter-spacing: 0.1em;
 
-    span {
-        font-size: 1.4rem;
-        letter-spacing: 0;
+        span {
+            font-size: 1.4rem;
+            letter-spacing: 0;
 
+        }
     }
-}
+
+    .header__nav ul li a {
+        @include transition;
+
+        &:hover {
+            @include hover-hover-color;
+        }
+    }
 }
 

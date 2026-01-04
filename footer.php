@@ -21,7 +21,7 @@
         
         <footer>
             <div class="inner">
-                <div class="footer__wrap">
+                <nav class="footer__wrap">
 
                     <div class="footer__content">
                         <div class="footer__content-box">
@@ -75,9 +75,11 @@
                     </div>
                     
 
-                </div>
+                </nav>
                 <div class="footer__logo">
-                    <img src="image/common/footer_logo.png" alt="GRANBELL HOTEL GROUP">
+                    <a href="#">
+                        <img src="image/common/footer_logo.png" alt="GRANBELL HOTEL GROUP">
+                    </a>
                 </div>
                 
                 

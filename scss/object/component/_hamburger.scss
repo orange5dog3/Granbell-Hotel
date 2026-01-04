@@ -14,12 +14,12 @@
 
             &::before {
                 top: 0;
-                transform: rotate(45deg);
+                transform: rotate(28deg);
             }
 
             &::after {
                 top: 0;
-                transform: rotate(-45deg);
+                transform: rotate(-28deg);
             }
         }
     }
@@ -32,7 +32,6 @@
 .hamburger-line::after {
     position: absolute;
     left: 0;
-    // top: 2rem;
     width: 3rem;
     height: 0.1rem;
     background-color: $color-text;
@@ -60,35 +59,20 @@
 // ハンバーガーメニュー
 .hamburger-menu {
     position: fixed;
-    top: 5rem;
+    top: 5.6rem;
     right: 0;
-    width: 30rem;
-    background: $color-hover;
-    transition: transform 0.3s ease;
+    width: 100%;
+    height: calc(100vh - 5.6rem); // 画面高さからヘッダー分を引く
+    overflow-y: auto; // スクロール可能にする
+    background: $color-gray;
+    @include transition;
     z-index: 999;
     transform: translateX(100%);
+
+    padding: 5rem 2.75rem;
     
     &.active {
         transform: translateX(0);
-    }
-    
-    nav {
-        width: 100%;
-        ul {
-            display: flex;
-            flex-direction: column;
-            list-style: none;
-            margin: 0;
-        
-            li {
-                a {
-                    display: block;
-                    padding: 1.5rem 0 1.5rem 2rem;
-                    text-decoration: none;
-                    @include transition;
-                }
-            }
-        }
     }
 }
     
@@ -109,4 +93,75 @@
         pointer-events: auto;
     }
 }
+
+// ハンバーガーメニュー内容
+
+.header__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding-bottom: 2.4rem;
     
+}
+
+.header__content-box {
+
+    p {
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        border-bottom: 0.1rem solid $color-text;
+        padding-bottom: 0.8rem;
+
+    span {
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+
+    }
+    
+
+    a {
+        font-weight: 500;
+        font-size: 1.4rem;
+        @include transition;
+
+        &:hover {
+            @include hover-opacity;
+        }
+
+    }
+    
+}
+
+.header__content-outline {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.2rem;
+        height: 1.4rem;
+        background-image: url('/image/common/logo_accordion-toggle_hamburger.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform 0.3s ease;
+    }
+}
+
+.header__accordion-content {    
+    padding-top: 0.8rem;
+    display: none; // 初期状態は非表示
+}
+
+// アコーディオン開閉時の矢印回転
+.header__content-box.is-open {
+    .header__content-outline::after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+}
+
+

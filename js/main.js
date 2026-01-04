@@ -30,6 +30,19 @@ $('.footer__accordion-trigger').on('click', function () {
 });
 
 
+// ==========================================================================
+// header accordion (hamburger menu)
+// ==========================================================================
+$('.header__accordion-trigger').on('click', function () {
+    const $content = $(this).next('.header__accordion-content');
+    
+    // アコーディオンの開閉
+    $content.stop(true, true).slideToggle(300);
+    
+    // 親要素にクラスを付与して矢印を回転させる
+    $(this).parent('.header__content-box').toggleClass('is-open');
+});
+
 
 // ==========================================================================
 // fixed-btn

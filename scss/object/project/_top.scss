@@ -602,8 +602,29 @@
 // join the team-------------------------------------------
 .top__join-the-team {
     padding: 2rem 0;
+    overflow: hidden;
+    width: 100%;
+
     @include pc {
         padding: 8rem 0;
+    }
+}
+
+.top__join-the-team__track {
+    display: flex;
+    width: fit-content;
+    animation: infinite-loop 60s linear infinite;
+}
+
+.top__join-the-team__content {
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+    padding-right: 2rem;
+
+    @include pc {
+        gap: 6rem;
+        padding-right: 6rem;
     }
 
     p {
@@ -611,8 +632,19 @@
         font-weight: 700;
         line-height: 1;
         color: rgba(#894A23, 0.2);
+        white-space: nowrap;
+
         @include pc {
             font-size: 12rem;
         }
+    }
+}
+
+@keyframes infinite-loop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
     }
 }

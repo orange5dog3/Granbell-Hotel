@@ -512,7 +512,18 @@ include 'header.php';
     </section>
 
     <div class="top__join-the-team">
-        <p>JOIN THE TEAM</p>
+        <div class="top__join-the-team__track">
+            <div class="top__join-the-team__content">
+                <p>JOIN THE TEAM</p>
+                <p>JOIN THE TEAM</p>
+                <p>JOIN THE TEAM</p>
+            </div>
+            <div class="top__join-the-team__content">
+                <p>JOIN THE TEAM</p>
+                <p>JOIN THE TEAM</p>
+                <p>JOIN THE TEAM</p>
+            </div>
+        </div>
     </div>
 
 
