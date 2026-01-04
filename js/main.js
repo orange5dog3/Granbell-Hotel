@@ -31,3 +31,24 @@ $('.js-accordion-trigger').on('click', function () {
         $(this).parent().toggleClass('is-open');
     }
 });
+
+// ==========================================================================
+// modal
+// ==========================================================================
+
+//「開く」がクリックされた場合
+$('.modal-trigger').on('click', function () {
+    // data-target属性の値を取得
+    var target = $(this).data('target');
+    // 対応するidのモーダルを表示
+    $('#' + target).show();
+    $('#upper-arrow').hide(); // トップへ戻る矢印を非表示
+    $('body').css('overflow-y', 'hidden');  // 本文の縦スクロールを無効
+});
+
+//「閉じる」がクリックされた場合
+$('.js-modal-close').on('click', function () {
+    $('.modal-window').hide();
+    $('#upper-arrow').show(); // トップへ戻る矢印を表示
+    $('body').css('overflow-y', 'auto');     // 本文の縦スクロールを有効
+});

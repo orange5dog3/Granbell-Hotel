@@ -1,0 +1,120 @@
+.modal-trigger {
+  cursor: pointer;
+  @include transition;
+}
+
+.modal-trigger:hover {
+  @include hover-opacity;
+}
+
+.modal-window {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.modal__bg {
+  width: 100vw;
+  height: 100vh;
+  background: $color-text;
+  opacity: 0.4;
+}
+
+.modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-white;
+  z-index: 1000;
+  
+  padding: 3.2rem 0;
+  width: 32rem;
+  border-radius: 3rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+
+    p {
+        font-size: 3.2rem;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        color: $color-accent;
+        text-align: center;
+        line-height: 1;
+
+        span {
+            font-size: 1.6rem;
+            color: $color-text;
+        }
+    }
+
+}
+
+
+.modal__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+}
+
+.modal__body-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+
+    @include pc {
+        flex-direction: row;
+        gap: 0.8rem;
+    }
+}
+
+.modal__entry-btn {
+    font-size: 2rem;
+}
+
+// 閉じるボタン
+.modal__close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid $color-accent;
+    border-radius: 50%;
+    background: $color-white;
+    cursor: pointer;
+    z-index: 10;
+    @include transition;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1.6rem;
+        height: 0.1rem;
+        background-color: $color-accent;
+    }
+
+    &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &:hover {
+        @include hover-opacity;
+    }
+}

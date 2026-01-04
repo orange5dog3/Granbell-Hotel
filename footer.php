@@ -12,7 +12,7 @@
                 もう目の前。<br>
                 「グランベルで働く自分」を、<br class="pc_none">
                 今描いてみてください。</p>
-            <a href="#" class="btn-entry btn-footer">ENTRY</a>
+            <a href="#entry-modal" class="btn-entry btn-footer modal-trigger" data-target="entry-modal">ENTRY</a>
 
         </div>
 
@@ -91,6 +91,7 @@
     <p>&copy; 2006-2024 GRANBELL HOTEL GROUP</p>
 </div>
 </div>
+<?php include 'modal.php'; ?>
 <!-- jquery読み込み -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <!-- slick読み込み -->
