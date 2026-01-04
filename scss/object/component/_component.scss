@@ -179,3 +179,25 @@
         }
     }
 }
+
+.c-orange-btn {
+    background-color: $color-white;
+    border: 1px solid $color-accent;
+    color: $color-accent;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+
+    .icon-triangle {
+        color: $color-accent;
+        width: 1.4rem;
+        height: 1.2rem;
+    }
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-accent;
+        .icon-triangle {
+            color: $color-white;
+        }
+    }
+}
