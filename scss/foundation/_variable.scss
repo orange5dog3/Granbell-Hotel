@@ -22,6 +22,7 @@ $color-bg: rgba(250, 246, 241, 0.5); // ページ背景
 
 
 
+
 // メディアクエリ
 // -------------------------
 @mixin sp {
@@ -50,6 +51,11 @@ $color-bg: rgba(250, 246, 241, 0.5); // ページ背景
 
 @mixin hover-hover-color {
     color: $color-hover;
+}
+
+@mixin hover-reverse-color {
+    color: $color-hover;
+    background-color: $color-white;
 }
 
 @mixin hover-bigger {

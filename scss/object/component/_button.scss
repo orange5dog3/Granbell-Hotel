@@ -4,20 +4,23 @@
   align-items: center;
 
   border-radius: 40px;
-  border: 2px solid #fff;
+  border: 2px solid $color-white;
   
   background: linear-gradient(90deg,#FF5A37 0%, #FFDF75 100%);
   
-  color: #fff;
+  color: $color-white;
   font-weight: 700;
   font-size: 1.6rem;
   letter-spacing: 0.1em;
   
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   
-  transition: opacity 0.3s;
+  @include transition;
+
   &:hover {
-    opacity: 0.8;
+    color: $color-hover;
+    background: $color-white;
+    border: 2px solid $color-hover;
   }
 }
 
@@ -38,4 +41,10 @@
     width: 14.2rem;
     height: 4.4rem;
   }
+}
+
+.btn-hamburger {
+  width: 100%;
+  height: 4.4rem;
+    
 }
