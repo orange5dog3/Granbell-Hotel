@@ -37,6 +37,11 @@
   border-radius: 3rem;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 
+  @include pc {
+    width: vw(100,144);
+    max-width: 100rem;
+  }
+
     p {
         font-size: 3.2rem;
         letter-spacing: 0.1em;
@@ -45,9 +50,17 @@
         text-align: center;
         line-height: 1;
 
+        @include pc {
+            font-size: 4rem;
+        }
+
         span {
             font-size: 1.6rem;
             color: $color-text;
+
+            @include pc {
+                font-size: 2.4rem;
+            }
         }
     }
 
@@ -83,17 +96,22 @@
 // 閉じるボタン
 .modal__close-btn {
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
     display: block;
-    width: 4rem;
-    height: 4rem;
+    width: 4.8rem;
+    height: 4.8rem;
     border: 1px solid $color-accent;
     border-radius: 50%;
     background: $color-white;
     cursor: pointer;
     z-index: 10;
     @include transition;
+
+    @include pc {
+        top: 2rem;
+        right: 2rem;
+    }
 
     &::before,
     &::after {
