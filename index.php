@@ -91,7 +91,7 @@ include 'header.php';
                     </div>
                     <div class="c-box-text">
                         <div class="c-box-text-title">
-                            <h3>COMPANY DATE</h3>
+                            <h3>COMPANY DATA</h3>
                             <p>数字が語るグランベルホテル</p>
                         </div>
                         <p class="c-box-text-content">数字の裏にあるのは、社員一人ひとりの成長と挑戦の軌跡。<br>
