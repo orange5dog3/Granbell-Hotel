@@ -46,7 +46,7 @@
                                     <span>描けるキャリア</span></a></li>
                             <li><a href="#">RECRUIT<br>
                                     <span>採用情報</span></a></li>
-                            <li><a href="#" class="btn-entry btn-header">ENTRY</a></li>
+                            <li><a href="#entry-modal" class="btn-entry btn-header modal-trigger" data-target="entry-modal">ENTRY</a></li>
                         </ul>
                     </nav>
                 </div>
