@@ -140,7 +140,7 @@
         position: absolute;
         right: 0;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%) rotate(180deg);
         width: 1.2rem;
         height: 1.4rem;
         background-image: url('/image/common/logo_accordion-toggle_hamburger.svg');
@@ -159,7 +159,7 @@
 // アコーディオン開閉時の矢印回転
 .header__content-box.is-open {
     .header__content-outline::after {
-        transform: translateY(-50%) rotate(180deg);
+        transform: translateY(-50%);
     }
 }
 
