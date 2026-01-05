@@ -673,7 +673,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.2rem;
+  gap: 2.4rem;
 }
 @media screen and (min-width: 768px) {
   .footer__wrap {
@@ -693,7 +693,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.2rem;
+  gap: 2.4rem;
 }
 @media screen and (min-width: 768px) {
   .footer__content {
@@ -762,11 +762,11 @@ footer {
   }
 }
 .footer__content-box ul {
-  margin-top: 1.2rem;
+  margin-top: 1.6rem;
 }
 @media screen and (min-width: 768px) {
   .footer__content-box ul {
-    margin-top: 0.8rem;
+    margin-top: 1.4rem;
   }
 }
 .footer__content-box ul li a {
@@ -1163,8 +1163,8 @@ footer {
   position: absolute;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
   width: 1.2rem;
   height: 1.4rem;
   background-image: url("/image/common/logo_accordion-toggle_hamburger.svg");
@@ -1183,8 +1183,8 @@ footer {
 }
 
 .header__content-box.is-open .header__content-outline::after {
-  -webkit-transform: translateY(-50%) rotate(180deg);
-          transform: translateY(-50%) rotate(180deg);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .btn-entry {
