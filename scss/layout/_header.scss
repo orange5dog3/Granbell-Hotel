@@ -5,6 +5,11 @@
     width: 100%;
     z-index: 999;
     background-color: $color-base-white;
+    transition: background-color 0.3s;
+
+    &.is-scrolled {
+        background-color: rgba($color-base-white, 0.9);
+    }
 }
 
 
@@ -80,4 +85,3 @@
         }
     }
 }
-

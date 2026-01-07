@@ -397,7 +397,7 @@ html {
 }
 
 body {
-  font-weight: 400;
+  font-weight: 500;
   color: #454241;
   background-color: #FAF6F1;
   font-family: "YuGothic", "Yu Gothic", "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
@@ -435,6 +435,7 @@ img {
 .inner {
   padding-inline: 2.75rem;
   margin: 0 auto;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .inner {
@@ -522,6 +523,11 @@ a {
   width: 100%;
   z-index: 999;
   background-color: #FAF6F1;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.header.is-scrolled {
+  background-color: rgba(250, 246, 241, 0.9);
 }
 
 .header-content {
@@ -1475,6 +1481,7 @@ footer {
   letter-spacing: 0.4em;
   font-size: 2rem;
   font-weight: 700;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .top__vertical-writing .inner p {
@@ -1621,6 +1628,7 @@ footer {
 
 .top__company {
   padding-top: 6rem;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .top__company {

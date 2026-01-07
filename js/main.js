@@ -52,3 +52,14 @@ $('.js-modal-close').on('click', function () {
 
     $('body').css('overflow-y', 'auto');     // 本文の縦スクロールを有効
 });
+
+// ==========================================================================
+// header scroll
+// ==========================================================================
+$(window).on('scroll', function () {
+    if ($(this).scrollTop() > 0) {
+        $('.header').addClass('is-scrolled');
+    } else {
+        $('.header').removeClass('is-scrolled');
+    }
+});

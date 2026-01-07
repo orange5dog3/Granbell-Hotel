@@ -6,7 +6,7 @@ include 'header.php';
 <main class="top header-padding">
     <div class="top__fv">
         <div class="top__fv-title">
-            <img src="image/top/image_top_fv-title.png" alt="GRANBELL HOTEL GROUP">
+            <img src="image/top/image_top_fv-title.svg" alt="その街らしいおもてなしを">
         </div>
         <div class="top__fv-image">
             <picture>
@@ -239,7 +239,7 @@ include 'header.php';
                 <div class="top__company-flex">
                     <div class="top__company__flex-box  c-round-box color-white-bg">
                         <div class="top__company__flex__box-image">
-                            <img src="image/top/logo_top_company1.svg" alt="宿泊部門<">
+                            <img src="image/top/logo_top_company1.svg" alt="宿泊部門">
                         </div>
                         <p>宿泊部門</p>
                     </div>
