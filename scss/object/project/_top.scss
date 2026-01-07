@@ -138,6 +138,7 @@
     padding-bottom: 6rem;
 
     @include pc {
+        background-image: url(../image/top/bg_top_about_pc.png);
         padding-top: 12rem;
         padding-bottom: 12rem;
     }
@@ -147,6 +148,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include pc {
+        background-image: linear-gradient(rgba(69, 66, 65, 0.5), rgba(69, 66, 65, 0.5)),url(../image/top/bg_top_about_pc.png);
+    }
 }
 
 .top__about-box {
@@ -155,6 +160,7 @@
     @include pc {
         padding: 3.2rem 0 3.2rem 4rem;
     }
+
 }
 
 .top__about__flex-parent {

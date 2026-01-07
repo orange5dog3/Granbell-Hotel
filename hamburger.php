@@ -57,7 +57,7 @@
 
     </nav>
 
-    <a href="#entry-modal" class="btn-entry btn-hamburger modal-trigger" data-target="entry-modal">ENTRY</a>
+    <button class="btn-entry btn-hamburger modal-trigger" data-target="entry-modal">ENTRY</button>
 
 </div>
 

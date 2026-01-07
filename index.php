@@ -526,6 +526,8 @@ include 'header.php';
         </div>
     </div>
 
+    <?php include 'entry.php'; ?>
+
 
 
 </main>

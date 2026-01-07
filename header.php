@@ -46,7 +46,8 @@
                                     <span>描けるキャリア</span></a></li>
                             <li><a href="#">RECRUIT<br>
                                     <span>採用情報</span></a></li>
-                            <li><a href="#entry-modal" class="btn-entry btn-header modal-trigger" data-target="entry-modal">ENTRY</a></li>
+                            <li><button class="btn-entry btn-header modal-trigger"
+                                    data-target="entry-modal">ENTRY</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -54,7 +55,7 @@
                 <!-- SP header -->
                 <div class="sp__header pc_none">
                     <!-- SP entry button -->
-                    <a href="#entry-modal" class="btn-entry btn-header modal-trigger" data-target="entry-modal">ENTRY</a>
+                    <button class="btn-entry btn-header modal-trigger" data-target="entry-modal">ENTRY</button>
 
                     <!-- SP hamburger menu -->
                     <?php include 'hamburger.php'; ?>
